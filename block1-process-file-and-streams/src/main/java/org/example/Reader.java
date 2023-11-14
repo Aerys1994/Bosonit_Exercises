@@ -24,7 +24,7 @@ public class Reader {
             }
 
             // Lanza error si falta alguno de los dos delimitadores ":"
-            if (parts.length < 2 || parts[1].isEmpty()) {
+            if (parts.length < 2 || (parts[1].isEmpty() && (parts.length < 3 || parts[2].isEmpty()))) {
                 throw new InvalidLineFormatException(line, InvalidLineFormatException.MISSING_DELIMITER);
             }
 
