@@ -1,0 +1,6 @@
+my:
+  greeting: Hello world!
+  number: 100
+
+greeting: Hola
+number: 33
