@@ -14,8 +14,8 @@ public class AppConfig {
     }
 
     @Bean
-    public CommandLineRunner tercera() {
-        return args -> System.out.println("Soy la tercera clase");
+    public CommandLineRunner tercera(String p) {
+        return args -> System.out.println(p);
     }
 
 }
