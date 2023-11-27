@@ -1,21 +1,20 @@
 package com.Bosonit.block6personcontrollers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/controlador1")
 public class Controlador1 {
 
     private final PersonService personService;
+    private final CiudadService ciudadService;
 
 
-    public Controlador1(PersonService personService)
+    public Controlador1(PersonService personService, CiudadService ciudadService)
     {
         this.personService = personService;
+        this.ciudadService = ciudadService;
     }
 
     @GetMapping("/addPerson")
@@ -25,5 +24,10 @@ public class Controlador1 {
             @RequestHeader int edad
     ) {
         return personService.createPerson(nombre, poblacion, edad);
+    }
+
+    @PostMapping("/addCiudad")
+    public void addCiudad(@RequestBody Ciudad ciudad) {
+        ciudadService.agregarCiudad(ciudad);
     }
 }

@@ -6,14 +6,18 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/controlador2")
 public class Controlador2 {
     private final PersonService personService;
+    private final CiudadService ciudadService;
 
 
-    public Controlador2(PersonService personService) {
+    public Controlador2(PersonService personService, CiudadService ciudadService) {
         this.personService = personService;
+        this.ciudadService = ciudadService;
     }
 
     @GetMapping("/getPerson")
@@ -27,5 +31,10 @@ public class Controlador2 {
         person.setPoblacion(poblacion);
         person.setEdad(edad);
         return personService.ageTimesTwo(person);
+    }
+
+    @GetMapping("/getCiudades")
+    public List<Ciudad> getCiudades() {
+        return ciudadService.obtenerCiudades();
     }
 }
