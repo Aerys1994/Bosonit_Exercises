@@ -1,5 +1,6 @@
 package com.Bosonit.block7crud.controller;
 
+import com.Bosonit.block7crud.application.PersonaService;
 import com.Bosonit.block7crud.application.PersonaServiceImpl;
 import com.Bosonit.block7crud.controller.dto.PersonaOutputDto;
 import com.Bosonit.block7crud.domain.Persona;
@@ -16,7 +17,7 @@ import java.util.List;
 public class ControllerGet {
 
     @Autowired
-    PersonaServiceImpl personaService;
+    PersonaService personaService;
 
     @GetMapping("/{id}")
     public ResponseEntity<PersonaOutputDto> getPersonaById(@PathVariable int id) {

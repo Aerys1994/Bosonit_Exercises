@@ -1,5 +1,6 @@
 package com.Bosonit.block7crud.controller;
 
+import com.Bosonit.block7crud.application.PersonaService;
 import com.Bosonit.block7crud.application.PersonaServiceImpl;
 import com.Bosonit.block7crud.controller.dto.PersonaInputDto;
 import com.Bosonit.block7crud.controller.dto.PersonaOutputDto;
@@ -15,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ControllerModify {
 
     @Autowired
-    PersonaServiceImpl personaService;
+    PersonaService personaService;
     @PutMapping
     public ResponseEntity<PersonaOutputDto> updateStudent(@RequestBody PersonaInputDto persona) {
         try {

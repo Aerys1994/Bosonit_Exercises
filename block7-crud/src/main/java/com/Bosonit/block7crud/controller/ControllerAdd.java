@@ -1,5 +1,6 @@
 package com.Bosonit.block7crud.controller;
 
+import com.Bosonit.block7crud.application.PersonaService;
 import com.Bosonit.block7crud.application.PersonaServiceImpl;
 import com.Bosonit.block7crud.controller.dto.PersonaInputDto;
 import com.Bosonit.block7crud.controller.dto.PersonaOutputDto;
@@ -14,7 +15,7 @@ import java.net.URI;
 public class ControllerAdd {
 
     @Autowired
-    PersonaServiceImpl personaService;
+    PersonaService personaService;
 
     @PostMapping
     public ResponseEntity<PersonaOutputDto> addPersona(@RequestBody
