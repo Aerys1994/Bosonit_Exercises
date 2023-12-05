@@ -1,12 +1,7 @@
-package com.Bosonit.block7crud.controller;
+package com.bosonit.Block7.CRUD.validation.controllers;
 
-import com.Bosonit.block7crud.application.PersonaService;
-import com.Bosonit.block7crud.application.PersonaServiceImpl;
-import com.Bosonit.block7crud.controller.dto.PersonaOutputDto;
-import com.Bosonit.block7crud.domain.Persona;
-import com.Bosonit.block7crud.repository.PersonaRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.PageRequest;
+import com.bosonit.Block7.CRUD.validation.application.PersonaService;
+import com.bosonit.Block7.CRUD.validation.controllers.dto.PersonaOutputDto;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,7 +11,6 @@ import java.util.List;
 @RequestMapping("/persona")
 public class ControllerGet {
 
-    @Autowired
     PersonaService personaService;
 
     @GetMapping("/{id}")
@@ -29,9 +23,9 @@ public class ControllerGet {
     }
 
     @GetMapping("/nombre/{nombre}")
-    public ResponseEntity<List<PersonaOutputDto>> getPersonasPorNombre(@PathVariable String nombre) {
+    public ResponseEntity<List<PersonaOutputDto>> getPersonasPorUsuario(@PathVariable String usuario) {
         try {
-            List<PersonaOutputDto> personas = personaService.getPersonaByName(nombre);
+            List<PersonaOutputDto> personas = personaService.getPersonaByUsuario(usuario);
             return ResponseEntity.ok().body(personas);
         } catch (Exception e) {
             return ResponseEntity.notFound().build();
