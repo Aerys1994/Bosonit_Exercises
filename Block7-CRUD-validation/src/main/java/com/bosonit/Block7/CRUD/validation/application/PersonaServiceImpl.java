@@ -3,6 +3,8 @@ package com.bosonit.Block7.CRUD.validation.application;
 import com.bosonit.Block7.CRUD.validation.controllers.dto.PersonaInputDto;
 import com.bosonit.Block7.CRUD.validation.controllers.dto.PersonaOutputDto;
 import com.bosonit.Block7.CRUD.validation.domain.Persona;
+import com.bosonit.Block7.CRUD.validation.exceptions.CustomEntityNotFoundException;
+import com.bosonit.Block7.CRUD.validation.exceptions.UnprocessableEntityException;
 import com.bosonit.Block7.CRUD.validation.repository.PersonaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
@@ -18,8 +20,7 @@ public class PersonaServiceImpl implements PersonaService{
 
     @Override
     public PersonaOutputDto getPersonaById(int id) {
-        return personaRepository.findById(id).orElseThrow()
-                .personaToPersonaOutputDto();
+        return personaRepository.findById(id).orElseThrow(() -> new CustomEntityNotFoundException("Persona no encontrada con ID: " + id)).personaToPersonaOutputDto();
     }
 
     @Override
@@ -49,33 +50,33 @@ public class PersonaServiceImpl implements PersonaService{
         if (isNulo(personaInputDto.getUsuario())) {
             throw new Exception("Usuario no puede ser nulo");
         } else if (personaInputDto.getUsuario().length() < 6 || personaInputDto.getUsuario().length() > 10 ) {
-            throw new Exception("Usuario debe tener entre 6 y 10 caracteres");
+            throw new UnprocessableEntityException("Usuario debe tener entre 6 y 10 caracteres");
         }
 
         if (isNulo(personaInputDto.getPassword())) {
-            throw new Exception("Password no puede ser nulo");
+            throw new UnprocessableEntityException("Password no puede ser nulo");
         }
 
         if (isNulo(personaInputDto.getName())) {
-            throw new Exception("Name no puede ser nulo");
+            throw new UnprocessableEntityException("Name no puede ser nulo");
         }
         if (isNulo(personaInputDto.getCompanyEmail())) {
-            throw new Exception("CompanyEmail no puede ser nulo");
+            throw new UnprocessableEntityException("CompanyEmail no puede ser nulo");
         }
         if (isNulo(personaInputDto.getPersonalEmail())) {
-            throw new Exception("CompanyEmail no puede ser nulo");
+            throw new UnprocessableEntityException("CompanyEmail no puede ser nulo");
         }
         if(isNulo(personaInputDto.getCity())) {
-            throw new Exception("City no puede ser nulo");
+            throw new UnprocessableEntityException("City no puede ser nulo");
         }
         if(isNulo(String.valueOf(personaInputDto.isActive()))) {
-            throw new Exception("Active no puede ser nulo");
+            throw new UnprocessableEntityException("Active no puede ser nulo");
         }
         if(isNulo(personaInputDto.getCity())) {
-            throw new Exception("City no puede ser nulo");
+            throw new UnprocessableEntityException("City no puede ser nulo");
         }
         if(isNulo(String.valueOf(personaInputDto.getCreatedDate()))) {
-            throw new Exception("CreatedDate no puede ser nulo");
+            throw new UnprocessableEntityException("CreatedDate no puede ser nulo");
         }
 
     }
