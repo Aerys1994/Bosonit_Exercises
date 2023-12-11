@@ -2,6 +2,7 @@ package com.bosonit.Block7.CRUD.validation.controllers;
 
 import com.bosonit.Block7.CRUD.validation.application.PersonaService;
 import com.bosonit.Block7.CRUD.validation.controllers.dto.PersonaOutputDto;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,6 +12,7 @@ import java.util.List;
 @RequestMapping("/persona")
 public class ControllerGet {
 
+    @Autowired
     PersonaService personaService;
 
     @GetMapping("/{id}")
