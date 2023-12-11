@@ -1,4 +1,4 @@
-package com.bosonit.Block7.CRUD.validation.controllers.dto;
+package com.bosonit.Block7.CRUD.validation.controllers.dto.persona;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

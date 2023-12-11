@@ -1,10 +1,11 @@
 package com.bosonit.Block7.CRUD.validation.domain;
 
-import com.bosonit.Block7.CRUD.validation.controllers.dto.PersonaInputDto;
-import com.bosonit.Block7.CRUD.validation.controllers.dto.PersonaOutputDto;
+import com.bosonit.Block7.CRUD.validation.controllers.dto.persona.PersonaInputDto;
+import com.bosonit.Block7.CRUD.validation.controllers.dto.persona.PersonaOutputDto;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -32,6 +33,13 @@ public class Persona {
     private Date createdDate;
     private String imageUrl;
     private Date terminationDate;
+
+    @OneToOne(mappedBy = "persona")
+    private Student student;
+
+    @OneToOne(mappedBy = "persona")
+    private Professor professor;
+
 
     public Persona(PersonaInputDto personaInputDto) throws Exception {
 
@@ -63,8 +71,9 @@ public class Persona {
                 this.active,
                 this.createdDate,
                 this.imageUrl,
-                this.terminationDate
-
+                this.terminationDate,
+                this.student,
+                this.professor
         );
     }
 
