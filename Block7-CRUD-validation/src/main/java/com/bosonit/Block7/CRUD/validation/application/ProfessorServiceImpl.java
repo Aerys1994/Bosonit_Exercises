@@ -16,7 +16,6 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-@EnableFeignClients
 public class ProfessorServiceImpl implements ProfessorService {
 
     @Autowired
@@ -25,8 +24,6 @@ public class ProfessorServiceImpl implements ProfessorService {
     @Autowired
     ProfessorRepository professorRepository;
 
-    @Autowired
-    private ProfessorFeignClient professorFeignClient;
 
     @Override
     public Professor getProfessorById(int id) {

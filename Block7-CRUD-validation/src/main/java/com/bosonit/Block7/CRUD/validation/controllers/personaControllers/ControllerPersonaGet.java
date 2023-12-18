@@ -2,7 +2,7 @@ package com.bosonit.Block7.CRUD.validation.controllers.personaControllers;
 
 import com.bosonit.Block7.CRUD.validation.application.PersonaServiceImpl;
 import com.bosonit.Block7.CRUD.validation.controllers.dto.persona.PersonaOutputDto;
-import com.bosonit.Block7.CRUD.validation.controllers.dto.professor.ProfessorOutputDto;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -53,10 +53,4 @@ public class ControllerPersonaGet {
         return personaServiceImpl.getAllPersona(pageNumber, pageSize, includeStudent, includeProfessor);
     }
 
-    @GetMapping("/profesor/{id}")
-    public ResponseEntity<ProfessorOutputDto> getProfesor(@PathVariable int id) {
-        // Llamada al servicio de Profesor usando RestTemplate
-        ProfessorOutputDto profesorOutputDto = personaServiceImpl.getProfesorUsingRestTemplate(id);
-        return ResponseEntity.ok(profesorOutputDto);
-    }
 }

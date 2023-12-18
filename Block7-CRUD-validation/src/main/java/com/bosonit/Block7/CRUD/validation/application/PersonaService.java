@@ -19,6 +19,5 @@ public interface PersonaService {
     PersonaOutputDto updatePersona(int idPersona, PersonaInputDto personaInputDto) throws Exception;
 
 
-    ProfessorOutputDto getProfesorUsingRestTemplate(int idProfessor);
 
 }
