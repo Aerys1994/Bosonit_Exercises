@@ -2,6 +2,7 @@ package com.bosonit.Block7.CRUD.validation.application;
 
 import com.bosonit.Block7.CRUD.validation.controllers.dto.persona.PersonaInputDto;
 import com.bosonit.Block7.CRUD.validation.controllers.dto.persona.PersonaOutputDto;
+import com.bosonit.Block7.CRUD.validation.controllers.dto.professor.ProfessorOutputDto;
 
 import java.util.List;
 
@@ -18,6 +19,6 @@ public interface PersonaService {
     PersonaOutputDto updatePersona(int idPersona, PersonaInputDto personaInputDto) throws Exception;
 
 
-
+    ProfessorOutputDto getProfesorUsingRestTemplate(int idProfessor);
 
 }

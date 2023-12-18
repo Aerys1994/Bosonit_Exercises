@@ -9,12 +9,14 @@ import com.bosonit.Block7.CRUD.validation.repository.PersonaRepository;
 import com.bosonit.Block7.CRUD.validation.repository.ProfessorRepository;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@EnableFeignClients
 public class ProfessorServiceImpl implements ProfessorService {
 
     @Autowired
@@ -22,6 +24,9 @@ public class ProfessorServiceImpl implements ProfessorService {
 
     @Autowired
     ProfessorRepository professorRepository;
+
+    @Autowired
+    private ProfessorFeignClient professorFeignClient;
 
     @Override
     public Professor getProfessorById(int id) {
@@ -71,5 +76,9 @@ public class ProfessorServiceImpl implements ProfessorService {
         return professorRepository.findAll(pageRequest).getContent()
                 .stream()
                 .map(Professor::professorToProfessorOutputDto).toList();
+    }
+
+    public ProfessorOutputDto getProfessorUsingFeign(int id) {
+        return professorFeignClient.getProfessor(id);
     }
 }

@@ -2,6 +2,7 @@ package com.bosonit.Block7.CRUD.validation.application;
 
 import com.bosonit.Block7.CRUD.validation.controllers.dto.persona.PersonaInputDto;
 import com.bosonit.Block7.CRUD.validation.controllers.dto.persona.PersonaOutputDto;
+import com.bosonit.Block7.CRUD.validation.controllers.dto.professor.ProfessorOutputDto;
 import com.bosonit.Block7.CRUD.validation.domain.Persona;
 import com.bosonit.Block7.CRUD.validation.exceptions.CustomEntityNotFoundException;
 import com.bosonit.Block7.CRUD.validation.exceptions.UnprocessableEntityException;
@@ -9,6 +10,7 @@ import com.bosonit.Block7.CRUD.validation.repository.PersonaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -18,6 +20,9 @@ public class PersonaServiceImpl implements PersonaService{
 
     @Autowired
     PersonaRepository personaRepository;
+
+    @Autowired
+    private RestTemplate restTemplate;
 
     @Override
     public PersonaOutputDto getPersonaById(int id, boolean includeStudent, boolean includeProfessor) {
@@ -137,5 +142,9 @@ public class PersonaServiceImpl implements PersonaService{
                 .toList();
     }
 
+    public ProfessorOutputDto getProfesorUsingRestTemplate(int idProfessor) {
+        String professorUrl = "http://localhost:8081/professor/" + idProfessor;
+        return restTemplate.getForObject(professorUrl, ProfessorOutputDto.class);
+    }
 
 }
