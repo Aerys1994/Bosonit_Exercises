@@ -20,16 +20,14 @@ public class ControllerStudentGet {
 
 
     @GetMapping("/{id_student}")
-    public ResponseEntity<StudentOutputDtoSimple> getStudentById(
+    public ResponseEntity<?> getStudentById(
             @PathVariable int id_student,
             @RequestParam(defaultValue = "simple") String outputType) {
 
             Student student = studentServiceImpl.getStudentById(id_student);
 
-
-            if (outputType.toLowerCase().equals("full")) {
-                var dto=student.studentToStudentOutputDtoFull();
-                return ResponseEntity.ok().body(dto);
+            if (outputType.toLowerCase() == "full") {
+                return ResponseEntity.ok().body(student.studentToStudentOutputDtoFull());
             } else  {
                 return ResponseEntity.ok().body(student.studentToStudentOutputDtoSimple());
             }

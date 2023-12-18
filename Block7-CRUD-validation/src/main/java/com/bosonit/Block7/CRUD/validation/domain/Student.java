@@ -59,7 +59,6 @@ public class Student {
                 this.branch,
                 this.persona.getId(),
                 this.persona.getUsuario(),
-                this.persona.getPassword(),
                 this.persona.getName(),
                 this.persona.getSurname(),
                 this.persona.getCompanyEmail(),
