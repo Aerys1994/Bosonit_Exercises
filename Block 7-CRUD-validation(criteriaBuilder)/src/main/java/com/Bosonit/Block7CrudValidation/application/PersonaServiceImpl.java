@@ -25,7 +25,7 @@ public class PersonaServiceImpl implements com.Bosonit.Block7CrudValidation.appl
     @Override
     public PersonaOutputDto getPersonaById(int idPersona) {
         Persona persona = personaRepository.findById(idPersona).orElseThrow(
-                () -> new CustomEntityNotFoundException("Persona no encontrada con ID: " + idPersona));
+                () -> new CustomEntityNotFoundException("Persona not found with id: " + idPersona));
 
         PersonaOutputDto personaOutputDto = persona.personaToPersonaOutputDto();
 
@@ -58,15 +58,29 @@ public class PersonaServiceImpl implements com.Bosonit.Block7CrudValidation.appl
     @Override
     public PersonaOutputDto updatePersona(int idPersona, PersonaInputDto personaInputDto) throws Exception {
         checkInputDto(personaInputDto);
-        personaRepository.findById(personaInputDto.getId()).orElseThrow(() -> new CustomEntityNotFoundException("Persona no encontrada con ID"));
-        return personaRepository.save(new Persona(personaInputDto))
-                .personaToPersonaOutputDto();
+        Persona persona = personaRepository.findById(personaInputDto.getIdPersona()).orElseThrow(()
+                -> new CustomEntityNotFoundException("Persona no encontrada con id: " + idPersona));
+
+        persona.setUsuario(personaInputDto.getUsuario());
+        persona.setPassword(personaInputDto.getPassword());
+        persona.setName(personaInputDto.getName());
+        persona.setSurname(personaInputDto.getSurname());
+        persona.setCompanyEmail(personaInputDto.getCompanyEmail());
+        persona.setPersonalEmail(personaInputDto.getPersonalEmail());
+        persona.setCity(personaInputDto.getCity());
+        persona.setActive(personaInputDto.isActive());
+        persona.setCreatedDate(personaInputDto.getCreatedDate());
+        persona.setImageUrl(personaInputDto.getImageUrl());
+        persona.setTerminationDate(personaInputDto.getTerminationDate());
+
+        return persona.personaToPersonaOutputDto();
     }
 
-    private void checkInputDto(PersonaInputDto personaInputDto) throws Exception {
+
+    private void checkInputDto(PersonaInputDto personaInputDto) {
 
         if (isNulo(personaInputDto.getUsuario())) {
-            throw new Exception("Usuario no puede ser nulo");
+            throw new UnprocessableEntityException("Usuario no puede ser nulo");
         } else if (personaInputDto.getUsuario().length() < 6 || personaInputDto.getUsuario().length() > 10) {
             throw new UnprocessableEntityException("Usuario debe tener entre 6 y 10 caracteres");
         }

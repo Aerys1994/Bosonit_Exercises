@@ -20,7 +20,7 @@ public class ControllerPersonaUpdate {
     @PutMapping
     public ResponseEntity<PersonaOutputDto> updatePersona(@RequestBody PersonaInputDto persona) {
 
-            personaService.getPersonaById(persona.getId());
+            personaService.getPersonaById(persona.getIdPersona());
         try {
             return  ResponseEntity.ok().body(personaService.addPersona(persona));
         } catch (Exception e) {

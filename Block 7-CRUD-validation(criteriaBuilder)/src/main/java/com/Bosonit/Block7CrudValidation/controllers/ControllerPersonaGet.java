@@ -41,7 +41,7 @@ public class ControllerPersonaGet {
     }
 
     @GetMapping("/nombre/{nombre}")
-    public ResponseEntity<List<PersonaOutputDto>> getPersonasPorUsuario(
+    public ResponseEntity<List<PersonaOutputDto>> getPersonasByUsuario(
             @PathVariable String usuario) {
 
         List<PersonaOutputDto> personas = personaService.getPersonaByUsuario(

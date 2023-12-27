@@ -36,9 +36,6 @@ public class Persona {
 
 
     public Persona(PersonaInputDto personaInputDto) throws Exception {
-
-
-        this.idPersona = personaInputDto.getId();
         this.usuario = personaInputDto.getUsuario();
         this.password = personaInputDto.getPassword();
         this.name = personaInputDto.getName();
