@@ -9,9 +9,11 @@ import com.Bosonit.Block13MongoDb.repository.PersonaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
+import org.springframework.data.mongodb.core.FindAndModifyOptions;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
@@ -36,7 +38,10 @@ public class PersonaServiceImpl implements com.Bosonit.Block13MongoDb.applicatio
 
     @Override
     public List<PersonaOutputDto> getPersonaByUsuario(String usuario) {
-        List<Persona> personas = personaRepository.findByUsuario(usuario);
+        Query query = new Query();
+        query.addCriteria(Criteria.where("usuario").is(usuario));
+
+        List<Persona> personas = mongoTemplate.find(query, Persona.class);
 
         return personas.stream()
                 .map(Persona::personaToPersonaOutputDto)
@@ -54,25 +59,34 @@ public class PersonaServiceImpl implements com.Bosonit.Block13MongoDb.applicatio
     @Override
     public PersonaOutputDto updatePersona(String idPersona, PersonaInputDto personaInputDto) throws Exception {
         checkInputDto(personaInputDto);
-        Persona existingPersona = mongoTemplate.findById(idPersona, Persona.class);
-        if (existingPersona == null) {
-            throw new CustomEntityNotFoundException("Persona not found");
+
+        Query query = new Query(Criteria.where("_id").is(idPersona));
+        Update update = new Update()
+                .set("usuario", personaInputDto.getUsuario())
+                .set("password", personaInputDto.getPassword())
+                .set("name", personaInputDto.getName())
+                .set("surname", personaInputDto.getSurname())
+                .set("companyEmail", personaInputDto.getCompanyEmail())
+                .set("surname", personaInputDto.getPersonalEmail())
+                .set("surname", personaInputDto.getCity())
+                .set("surname", personaInputDto.isActive())
+                .set("surname", personaInputDto.getCreatedDate())
+                .set("surname", personaInputDto.getImageUrl())
+                .set("surname", personaInputDto.getTerminationDate());
+
+        Persona updatedPersona = mongoTemplate.findAndModify(
+                query,
+                update,
+                new FindAndModifyOptions().returnNew(true),
+                Persona.class
+        );
+
+        if (updatedPersona == null) {
+            throw new CustomEntityNotFoundException("Persona not found with id: " + idPersona);
         }
 
-        existingPersona.setUsuario(personaInputDto.getUsuario());
-        existingPersona.setPassword(personaInputDto.getPassword());
-        existingPersona.setName(personaInputDto.getName());
-        existingPersona.setSurname(personaInputDto.getSurname());
-        existingPersona.setCompanyEmail(personaInputDto.getCompanyEmail());
-        existingPersona.setPersonalEmail(personaInputDto.getPersonalEmail());
-        existingPersona.setCity(personaInputDto.getCity());
-        existingPersona.setActive(personaInputDto.isActive());
-        existingPersona.setCreatedDate(personaInputDto.getCreatedDate());
-        existingPersona.setImageUrl(personaInputDto.getImageUrl());
-        existingPersona.setTerminationDate(personaInputDto.getTerminationDate());
+        return updatedPersona.personaToPersonaOutputDto();
 
-        mongoTemplate.save(existingPersona);
-        return existingPersona.personaToPersonaOutputDto();
     }
 
     private void checkInputDto(PersonaInputDto personaInputDto) throws Exception {
