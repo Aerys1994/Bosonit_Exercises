@@ -14,6 +14,7 @@ public class PersonaInputDto {
     int idPersona;
     String usuario;
     String password;
+    boolean admin;
     String name;
     String surname;
     String companyEmail;

@@ -9,10 +9,11 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 public interface PersonaRepository extends JpaRepository<Persona, Integer>
 {
-    List<Persona> findByUsuario(String usuario);
+    Optional<Persona> findByUsuario(String usuario);
 
     public Page<PersonaOutputDto> findPersonaByQuery(Map<String, Object> conditions, Pageable pageable);
 

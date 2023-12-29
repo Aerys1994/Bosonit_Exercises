@@ -37,16 +37,16 @@ public class Block11CorsApplication {
 	@PostConstruct
 	public void populateDb() {
 		try {
-			personaRepository.save(new Persona(new PersonaInputDto(1,"123456", "dfgdfg", "Andreu",
+			personaRepository.save(new Persona(new PersonaInputDto(1,"Aerys", "alfa", true, "Andreu",
 					"Cunill", "oea@aa.es", "aeo@asdf.es", "Logroño",
 					true, new Date(), "lolo.jpg", new Date())));
-			personaRepository.save(new Persona(new PersonaInputDto(2,"123456", "dfgdfg", "Tim",
-					"Valles", "aoae@aa.es", "aoaoeoa@asdf.es", "Palma",
+			personaRepository.save(new Persona(new PersonaInputDto(2,"123456", "dfgdfg", false, "Henry",
+					"Cavill", "aoae@aa.es", "aoaoeoa@asdf.es", "Palma",
 					true, new Date(), "lolo.jpg", new Date())));
-			personaRepository.save(new Persona(new PersonaInputDto(3,"123456", "dfgdfg", "Rosa",
+			personaRepository.save(new Persona(new PersonaInputDto(3,"123456", "dfgdfg", false, "Rosa",
 					"Gutierrez", "aoae@aa.es", "aoaoeoa@asdf.es", "Palma",
 					true, new Date(), "lolo.jpg", new Date())));
-			personaRepository.save(new Persona(new PersonaInputDto(4,"123456", "dfgdfg", "Adri",
+			personaRepository.save(new Persona(new PersonaInputDto(4,"123456", "dfgdfg", false, "Adri",
 					"Ladariu", "aoae@aa.es", "aoaoeoa@asdf.es", "Palma",
 					true, new Date(), "lolo.jpg", new Date())));
 		} catch (Exception e) {

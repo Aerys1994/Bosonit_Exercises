@@ -2,6 +2,7 @@ package com.Bosonit.Block7CrudValidation.domain;
 
 import com.Bosonit.Block7CrudValidation.controllers.dto.PersonaInputDto;
 import com.Bosonit.Block7CrudValidation.controllers.dto.PersonaOutputDto;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -23,6 +24,8 @@ public class Persona {
 
     private String usuario;
     private String password;
+    @Column(nullable = false)
+    private boolean admin;
     private String name;
     private String surname;
     private String companyEmail;
@@ -38,6 +41,7 @@ public class Persona {
     public Persona(PersonaInputDto personaInputDto) throws Exception {
         this.usuario = personaInputDto.getUsuario();
         this.password = personaInputDto.getPassword();
+        this.admin = personaInputDto.isAdmin();
         this.name = personaInputDto.getName();
         this.surname = personaInputDto.getSurname();
         this.companyEmail = personaInputDto.getUsuario();
@@ -54,6 +58,7 @@ public class Persona {
                 this.idPersona,
                 this.usuario,
                 this.password,
+                this.admin,
                 this.name,
                 this.surname,
                 this.companyEmail,

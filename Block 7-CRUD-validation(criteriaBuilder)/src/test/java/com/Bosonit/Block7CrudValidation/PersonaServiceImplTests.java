@@ -7,7 +7,6 @@ import com.Bosonit.Block7CrudValidation.domain.Persona;
 import com.Bosonit.Block7CrudValidation.exceptions.CustomEntityNotFoundException;
 import com.Bosonit.Block7CrudValidation.exceptions.UnprocessableEntityException;
 import com.Bosonit.Block7CrudValidation.repository.PersonaRepository;
-import jakarta.persistence.EntityNotFoundException;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
@@ -47,7 +46,7 @@ public class PersonaServiceImplTests {
         assertThrows(Exception.class, () -> personaServiceImpl.addPersona(personaNull));
 
         // Case usuario < 6
-        PersonaInputDto personaUsernameLength = new PersonaInputDto(1, "12345", "dfgdfg", "Andreu",
+        PersonaInputDto personaUsernameLength = new PersonaInputDto(1, "12345", "dfgdfg", true, "Andreu",
                 "Cunill", "oea@aa.es", "aeo@asdf.es", "Logroño",
                 true, new Date(), "1234.jpg", new Date());
         try{

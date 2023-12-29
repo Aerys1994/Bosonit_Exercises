@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -36,7 +37,7 @@ public class PersonaServiceImpl implements com.Bosonit.Block7CrudValidation.appl
 
     @Override
     public List<PersonaOutputDto> getPersonaByUsuario(String usuario) {
-        List<Persona> personas = personaRepository.findByUsuario(usuario);
+        Optional<Persona> personas = personaRepository.findByUsuario(usuario);
 
         return personas.stream()
                 .map(persona -> {
