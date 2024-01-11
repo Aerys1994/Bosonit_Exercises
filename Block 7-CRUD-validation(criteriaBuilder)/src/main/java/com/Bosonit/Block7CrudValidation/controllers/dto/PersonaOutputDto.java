@@ -1,0 +1,28 @@
+package com.Bosonit.Block7CrudValidation.controllers.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.Date;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class PersonaOutputDto {
+
+    int idPersona;
+    String usuario;
+    String password;
+    boolean admin;
+    String name;
+    String surname;
+    String companyEmail;
+    String personalEmail;
+    String city;
+    boolean active;
+    Date createdDate;
+    String imageUrl;
+    Date terminationDate;
+
+}

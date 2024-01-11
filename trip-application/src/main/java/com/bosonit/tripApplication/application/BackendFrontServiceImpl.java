@@ -14,7 +14,7 @@ public class BackendFrontServiceImpl implements BackendFrontService {
     @Autowired
     private RestTemplate restTemplate;
 
-    private final String backendBaseUrl = "http://localhost:8080";
+    private final String backendBaseUrl = "http://backend-application:8082";
 
     @Override
     public ClientDto getClientById(int idClient) {
