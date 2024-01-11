@@ -1,0 +1,31 @@
+version: '3'
+services:
+  eureka-naming-service:
+    image: eureka-naming-service
+    build:
+        context: ./eureka-naming-service
+        dockerfile: Dockerfile
+    ports:
+        - 8761:8761
+    command: java -jar /app/eureka-naming-service-0.0.1-SNAPSHOT.jar
+
+  backend-application:
+    image: backend-application
+    ports:
+      - 8082:8082
+    depends_on:
+      - trip-application
+
+  trip-application:
+    image: trip-application
+    ports:
+      - 8081:8081
+    depends_on:
+      - eureka-naming-service
+
+  api-gateway-application:
+    image: api-gateway-application
+    ports:
+      - 8080:8080
+    depends_on:
+      - eureka-naming-service

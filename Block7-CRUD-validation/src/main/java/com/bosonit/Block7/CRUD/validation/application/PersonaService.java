@@ -17,7 +17,4 @@ public interface PersonaService {
     PersonaOutputDto addPersona (PersonaInputDto personaInputDto) throws Exception;
 
     PersonaOutputDto updatePersona(int idPersona, PersonaInputDto personaInputDto) throws Exception;
-
-
-
 }
