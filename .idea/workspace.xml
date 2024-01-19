@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="850de6fb-23cb-49d9-982d-cdab69335ec0" name="Changes" comment="block16 spring cloud">
+      <change afterPath="$PROJECT_DIR$/Block 15 - Kafka/Block-15-Kafka-consumer/src/main/java/com/bosonit/Block5/Kafka/consumer/KafkaConsumerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 15 - Kafka/Block-15-Kafka-consumer/src/main/java/com/bosonit/Block5/Kafka/consumer/KafkaConsumerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 15 - Kafka/Block-15-Kafka-producer/src/main/java/com/bosonit/Block5/Kafka/producer/KafkaProducerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 15 - Kafka/Block-15-Kafka-producer/src/main/java/com/bosonit/Block5/Kafka/producer/KafkaProducerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 15 - Kafka/Block-15-Kafka-producer/src/main/java/com/bosonit/Block5/Kafka/producer/KafkaProducerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/src/main/java/com/Bosonit/Block7CrudValidation/Block11CorsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/src/main/java/com/Bosonit/Block7CrudValidation/application/PersonaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/src/main/java/com/Bosonit/Block7CrudValidation/application/PersonaServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/src/main/java/com/Bosonit/Block7CrudValidation/controllers/ControllerPersonaAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/src/main/java/com/Bosonit/Block7CrudValidation/controllers/ControllerPersonaGet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/src/main/java/com/Bosonit/Block7CrudValidation/controllers/ControllerPersonaUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/src/main/java/com/Bosonit/Block7CrudValidation/controllers/dto/PersonaInputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/src/main/java/com/Bosonit/Block7CrudValidation/controllers/dto/PersonaOutputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/src/main/java/com/Bosonit/Block7CrudValidation/domain/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/src/main/java/com/Bosonit/Block7CrudValidation/exceptions/CustomEntityNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/src/main/java/com/Bosonit/Block7CrudValidation/exceptions/CustomError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/src/main/java/com/Bosonit/Block7CrudValidation/exceptions/UnprocessableEntityException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/src/main/java/com/Bosonit/Block7CrudValidation/repository/PersonaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/src/main/java/com/Bosonit/Block7CrudValidation/repository/PersonaRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/src/main/java/com/Bosonit/Block7CrudValidation/security/JwtToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/src/main/java/com/Bosonit/Block7CrudValidation/security/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/src/main/java/com/Bosonit/Block7CrudValidation/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/src/main/java/com/Bosonit/Block7CrudValidation/security/TokenAuthorizationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/src/test/java/com/Bosonit/Block7CrudValidation/Block7CrudValidationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block 7-CRUD-validation(criteriaBuilder)/src/test/java/com/Bosonit/Block7CrudValidation/PersonaServiceImplTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block-15-Kafka/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block10-dockerization/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block10-dockerization/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block10-dockerization/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block10-dockerization/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block10-dockerization/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block10-dockerization/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block10-dockerization/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block10-dockerization/src/main/java/com/Bosonit/Block10dockerization/Block10DockerizationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block10-dockerization/src/main/java/com/Bosonit/Block10dockerization/application/PersonaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block10-dockerization/src/main/java/com/Bosonit/Block10dockerization/application/PersonaServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block10-dockerization/src/main/java/com/Bosonit/Block10dockerization/controllers/ControllerPersonaAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block10-dockerization/src/main/java/com/Bosonit/Block10dockerization/controllers/ControllerPersonaGet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block10-dockerization/src/main/java/com/Bosonit/Block10dockerization/controllers/ControllerPersonaUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block10-dockerization/src/main/java/com/Bosonit/Block10dockerization/controllers/dto/PersonaInputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block10-dockerization/src/main/java/com/Bosonit/Block10dockerization/controllers/dto/PersonaOutputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block10-dockerization/src/main/java/com/Bosonit/Block10dockerization/domain/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block10-dockerization/src/main/java/com/Bosonit/Block10dockerization/exceptions/CustomEntityNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block10-dockerization/src/main/java/com/Bosonit/Block10dockerization/exceptions/CustomError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block10-dockerization/src/main/java/com/Bosonit/Block10dockerization/exceptions/UnprocessableEntityException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block10-dockerization/src/main/java/com/Bosonit/Block10dockerization/repository/PersonaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block10-dockerization/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block10-dockerization/src/test/java/com/Bosonit/Block10dockerization/Block10DockerizationApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-Cors/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-Cors/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-Cors/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-Cors/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-Cors/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-Cors/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-Cors/src/main/java/com/Bosonit/Block11Cors/Block11CorsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-Cors/src/main/java/com/Bosonit/Block11Cors/application/PersonaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-Cors/src/main/java/com/Bosonit/Block11Cors/application/PersonaServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-Cors/src/main/java/com/Bosonit/Block11Cors/controllers/ControllerPersonaAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-Cors/src/main/java/com/Bosonit/Block11Cors/controllers/ControllerPersonaGet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-Cors/src/main/java/com/Bosonit/Block11Cors/controllers/ControllerPersonaUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-Cors/src/main/java/com/Bosonit/Block11Cors/controllers/dto/PersonaInputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-Cors/src/main/java/com/Bosonit/Block11Cors/controllers/dto/PersonaOutputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-Cors/src/main/java/com/Bosonit/Block11Cors/domain/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-Cors/src/main/java/com/Bosonit/Block11Cors/exceptions/CustomEntityNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-Cors/src/main/java/com/Bosonit/Block11Cors/exceptions/CustomError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-Cors/src/main/java/com/Bosonit/Block11Cors/exceptions/UnprocessableEntityException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-Cors/src/main/java/com/Bosonit/Block11Cors/repository/PersonaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-Cors/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-Cors/src/test/java/com/Bosonit/Block11Cors/Block11CorsApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-upload-download-files/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-upload-download-files/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-upload-download-files/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-upload-download-files/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-upload-download-files/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-upload-download-files/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-upload-download-files/src/main/java/com/bosonit/Block11uploaddownloadfiles/Block11UploadDownloadFilesApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-upload-download-files/src/main/java/com/bosonit/Block11uploaddownloadfiles/application/FicheroService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-upload-download-files/src/main/java/com/bosonit/Block11uploaddownloadfiles/application/FicheroServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-upload-download-files/src/main/java/com/bosonit/Block11uploaddownloadfiles/controller/FicheroController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-upload-download-files/src/main/java/com/bosonit/Block11uploaddownloadfiles/controller/dto/FicheroInputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-upload-download-files/src/main/java/com/bosonit/Block11uploaddownloadfiles/controller/dto/FicheroOutputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-upload-download-files/src/main/java/com/bosonit/Block11uploaddownloadfiles/domain/Fichero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-upload-download-files/src/main/java/com/bosonit/Block11uploaddownloadfiles/repository/FicheroRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-upload-download-files/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block11-upload-download-files/src/test/java/com/bosonit/Block11uploaddownloadfiles/Block11UploadDownloadFilesApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block13-MongoDb/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block13-MongoDb/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block13-MongoDb/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block13-MongoDb/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block13-MongoDb/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block13-MongoDb/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block13-MongoDb/src/main/java/com/Bosonit/Block13MongoDb/Block11CorsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block13-MongoDb/src/main/java/com/Bosonit/Block13MongoDb/application/PersonaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block13-MongoDb/src/main/java/com/Bosonit/Block13MongoDb/application/PersonaServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block13-MongoDb/src/main/java/com/Bosonit/Block13MongoDb/controllers/ControllerPersonaAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block13-MongoDb/src/main/java/com/Bosonit/Block13MongoDb/controllers/ControllerPersonaGet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block13-MongoDb/src/main/java/com/Bosonit/Block13MongoDb/controllers/ControllerPersonaUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block13-MongoDb/src/main/java/com/Bosonit/Block13MongoDb/controllers/dto/PersonaInputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block13-MongoDb/src/main/java/com/Bosonit/Block13MongoDb/controllers/dto/PersonaOutputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block13-MongoDb/src/main/java/com/Bosonit/Block13MongoDb/domain/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block13-MongoDb/src/main/java/com/Bosonit/Block13MongoDb/exceptions/CustomEntityNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block13-MongoDb/src/main/java/com/Bosonit/Block13MongoDb/exceptions/CustomError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block13-MongoDb/src/main/java/com/Bosonit/Block13MongoDb/exceptions/UnprocessableEntityException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block13-MongoDb/src/main/java/com/Bosonit/Block13MongoDb/repository/PersonaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block13-MongoDb/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block13-MongoDb/src/test/java/com/Bosonit/Block13MongoDb/Block11CorsApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block16-Spring-Cloud/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block16-Spring-Cloud/Backend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block16-Spring-Cloud/Backend/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block16-Spring-Cloud/Backend/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block16-Spring-Cloud/Backend/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/Block7CrudValidationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/application/FeignService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/application/PersonaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/application/PersonaServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/application/ProfessorFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/application/ProfessorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/application/ProfessorServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/application/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/application/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/application/SubjectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/application/SubjectServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/CustomExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/dto/persona/PersonaInputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/dto/persona/PersonaOutputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/dto/professor/ProfessorInputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/dto/professor/ProfessorOutputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/dto/student/StudentInputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/dto/student/StudentOutputDtoFull.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/dto/student/StudentOutputDtoSimple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/dto/subject/SubjectInputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/dto/subject/SubjectOutputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/personaControllers/ControllerPersonaAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/personaControllers/ControllerPersonaGet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/personaControllers/ControllerPersonaUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/personaControllers/ControllerSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/professorControllers/ControllerProfessorAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/professorControllers/ControllerProfessorGet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/professorControllers/ControllerProfessorUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/studentControllers/ControllerStudentAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/studentControllers/ControllerStudentGet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/studentControllers/ControllerStudentUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/domain/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/domain/Professor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/domain/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/domain/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/exceptions/CustomEntityNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/exceptions/CustomError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/exceptions/UnprocessableEntityException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/repository/PersonaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/repository/ProfessorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/java/com/bosonit/Block7/CRUD/validation/repository/SubjectRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-Feign/src/test/java/com/bosonit/Block7/CRUD/validation/Block7CrudValidationApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/Block7CrudValidationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/application/PersonaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/application/PersonaServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/application/ProfessorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/application/ProfessorServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/application/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/application/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/application/SubjectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/application/SubjectServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/CustomExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/dto/persona/PersonaInputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/dto/persona/PersonaOutputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/dto/professor/ProfessorInputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/dto/professor/ProfessorOutputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/dto/student/StudentInputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/dto/student/StudentOutputDtoFull.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/dto/student/StudentOutputDtoSimple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/dto/subject/SubjectInputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/dto/subject/SubjectOutputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/personaControllers/ControllerPersonaAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/personaControllers/ControllerPersonaGet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/personaControllers/ControllerPersonaUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/personaControllers/ControllerSubject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/professorControllers/ControllerProfessorAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/professorControllers/ControllerProfessorGet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/professorControllers/ControllerProfessorUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/studentControllers/ControllerStudentAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/studentControllers/ControllerStudentGet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/controllers/studentControllers/ControllerStudentUpdate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/domain/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/domain/Professor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/domain/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/domain/Subject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/exceptions/CustomEntityNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/exceptions/CustomError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/exceptions/UnprocessableEntityException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/repository/PersonaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/repository/ProfessorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/java/com/bosonit/Block7/CRUD/validation/repository/SubjectRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Block7-CRUD-validation/src/test/java/com/bosonit/Block7/CRUD/validation/Block7CrudValidationApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bosonit_Exercises" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROYECTOGIT/fichero1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PROYECTOGIT/fichero2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block1-process-file-and-streams/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block1-process-file-and-streams/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block1-process-file-and-streams/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block1-process-file-and-streams/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block1-process-file-and-streams/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block1-process-file-and-streams/src/main/java/Exceptions/InvalidLineFormatException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block1-process-file-and-streams/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block1-process-file-and-streams/src/main/java/org/example/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block1-process-file-and-streams/src/main/java/org/example/Reader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block1-process-file-and-streams/test1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block3-maven-package/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block3-maven-package/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block3-maven-package/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block3-maven-package/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block3-maven-package/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block3-maven-package/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block3-maven-package/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-command-line-runner/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-command-line-runner/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-command-line-runner/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-command-line-runner/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-command-line-runner/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-command-line-runner/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-command-line-runner/src/main/java/Components/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-command-line-runner/src/main/java/Components/PostConstructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-command-line-runner/src/main/java/com/example/block5commandlinerunner/Block5CommandLineRunnerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-command-line-runner/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-command-line-runner/src/test/java/com/example/block5commandlinerunner/Block5CommandLineRunnerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-logging/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-logging/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-logging/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-logging/logs/error.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-logging/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-logging/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-logging/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-logging/src/main/java/com/Bosonit/block5logging/Block5LoggingApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-logging/src/main/java/com/Bosonit/block5logging/Slf4jController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-logging/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-logging/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-logging/src/test/java/com/Bosonit/block5logging/Block5LoggingApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-profiles/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-profiles/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-profiles/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-profiles/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-profiles/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-profiles/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-profiles/src/main/java/com/Bosonit/block5profiles/Block5ProfilesApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-profiles/src/main/java/com/Bosonit/block5profiles/Variables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-profiles/src/main/resources/application-INT.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-profiles/src/main/resources/application-PRO.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-profiles/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-profiles/src/test/java/com/Bosonit/block5profiles/Block5ProfilesApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-properties/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-properties/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-properties/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-properties/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-properties/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-properties/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-properties/src/main/java/com/Bosonit/block5properties/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-properties/src/main/java/com/Bosonit/block5properties/MyProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-properties/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-properties/src/main/resources/application1.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block5-properties/src/test/java/com/Bosonit/block5properties/Block5PropertiesApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-path-variable-headers/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-path-variable-headers/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-path-variable-headers/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-path-variable-headers/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-path-variable-headers/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-path-variable-headers/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-path-variable-headers/src/main/java/com/Bosonit/block6pathvariableheaders/AllDataRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-path-variable-headers/src/main/java/com/Bosonit/block6pathvariableheaders/Block6PathVariableHeadersApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-path-variable-headers/src/main/java/com/Bosonit/block6pathvariableheaders/Greeting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-path-variable-headers/src/main/java/com/Bosonit/block6pathvariableheaders/GreetingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-path-variable-headers/src/main/java/com/Bosonit/block6pathvariableheaders/HandlePutRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-path-variable-headers/src/main/java/com/Bosonit/block6pathvariableheaders/HeaderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-path-variable-headers/src/main/java/com/Bosonit/block6pathvariableheaders/JsonRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-path-variable-headers/src/main/java/com/Bosonit/block6pathvariableheaders/ProcessJsonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-path-variable-headers/src/main/java/com/Bosonit/block6pathvariableheaders/UserId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-path-variable-headers/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-path-variable-headers/src/test/java/com/Bosonit/block6pathvariableheaders/Block6PathVariableHeadersApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-person-controllers/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-person-controllers/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-person-controllers/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-person-controllers/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-person-controllers/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-person-controllers/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-person-controllers/src/main/java/com/Bosonit/block6personcontrollers/Block6PersonControllersApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-person-controllers/src/main/java/com/Bosonit/block6personcontrollers/Ciudad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-person-controllers/src/main/java/com/Bosonit/block6personcontrollers/CiudadService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-person-controllers/src/main/java/com/Bosonit/block6personcontrollers/CiudadServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-person-controllers/src/main/java/com/Bosonit/block6personcontrollers/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-person-controllers/src/main/java/com/Bosonit/block6personcontrollers/Controlador1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-person-controllers/src/main/java/com/Bosonit/block6personcontrollers/Controlador2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-person-controllers/src/main/java/com/Bosonit/block6personcontrollers/Controlador3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-person-controllers/src/main/java/com/Bosonit/block6personcontrollers/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-person-controllers/src/main/java/com/Bosonit/block6personcontrollers/PersonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-person-controllers/src/main/java/com/Bosonit/block6personcontrollers/PersonServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-person-controllers/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-person-controllers/src/test/java/com/Bosonit/block6personcontrollers/Block6PersonControllersApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-simple-controllers/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-simple-controllers/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-simple-controllers/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-simple-controllers/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-simple-controllers/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-simple-controllers/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-simple-controllers/src/main/java/com/Bosonit/block6simplecontrollers/Block6SimpleControllersApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-simple-controllers/src/main/java/com/Bosonit/block6simplecontrollers/Controler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-simple-controllers/src/main/java/com/Bosonit/block6simplecontrollers/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-simple-controllers/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block6-simple-controllers/src/test/java/com/Bosonit/block6simplecontrollers/Block6SimpleControllersApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block7-crud/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block7-crud/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block7-crud/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block7-crud/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block7-crud/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block7-crud/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block7-crud/src/main/java/com/Bosonit/block7crud/Block7CrudApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block7-crud/src/main/java/com/Bosonit/block7crud/application/PersonaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block7-crud/src/main/java/com/Bosonit/block7crud/application/PersonaServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block7-crud/src/main/java/com/Bosonit/block7crud/controller/ControllerAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block7-crud/src/main/java/com/Bosonit/block7crud/controller/ControllerDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block7-crud/src/main/java/com/Bosonit/block7crud/controller/ControllerGet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block7-crud/src/main/java/com/Bosonit/block7crud/controller/ControllerModify.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block7-crud/src/main/java/com/Bosonit/block7crud/controller/dto/PersonaInputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block7-crud/src/main/java/com/Bosonit/block7crud/controller/dto/PersonaOutputDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block7-crud/src/main/java/com/Bosonit/block7crud/domain/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block7-crud/src/main/java/com/Bosonit/block7crud/repository/PersonaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block7-crud/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/block7-crud/src/test/java/com/Bosonit/block7crud/Block7CrudApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fichero1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fichero2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/bosonit/Backend/domain/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bosonit/Backend/domain/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/bosonit/Backend/repository/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bosonit/Backend/repository/ClientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/bosonit/Backend/repository/TripRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/bosonit/Backend/repository/TripRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trip-application/src/main/java/com/bosonit/tripApplication/application/BackendFrontServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/trip-application/src/main/java/com/bosonit/tripApplication/application/BackendFrontServiceImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2al2U4maDvmp3GaZndrCEJJdt1z" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Merging master",
+    "jdk.selected.JAVA_MODULE": "21",
+    "last_opened_file_path": "C:/Users/andreu.cunill/IdeaProjects/block16-spring-cloud/api-gateway",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\andreu.cunill\IdeaProjects\Nueva carpeta\block16-spring-cloud\Backend\API-gateway" />
+      <recent name="C:\Users\andreu.cunill\IdeaProjects\Nueva carpeta\block16-spring-cloud\API-gateway" />
+      <recent name="C:\Users\andreu.cunill\IdeaProjects\Backend\block16-Springcloud\Api-gateway\eureka-naming-service" />
+      <recent name="C:\Users\andreu.cunill\IdeaProjects\Backend\block16-Springcloud\Api-gateway" />
+      <recent name="C:\Users\andreu.cunill\IdeaProjects\Backend\block16-Springcloud\backend-Front" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andreu.cunill\IdeaProjects\block16-spring-cloud\" />
+      <recent name="C:\Users\andreu.cunill\IdeaProjects\Nueva carpeta\block16-spring-cloud" />
+      <recent name="C:\Users\andreu.cunill\IdeaProjects\Backend\block16-Springcloud\eureka-naming-service" />
+      <recent name="C:\Users\andreu.cunill\IdeaProjects\Backend\block16-Springcloud" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.docker-compose.yml.trip-application: Compose Deployment">
+    <configuration name="BackendApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bosonit.Backend.BackendApplication" />
+      <module name="Backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bosonit.Backend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="block16-spring-cloud" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="block16-spring-cloud" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Backend/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="Backend/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="backend-Front/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="backend-Front/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.trip-application: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="trip-application" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="eureka-naming-service/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="eureka-naming-service/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml.trip-application: Compose Deployment" />
+        <item itemvalue="Application.BackendApplication" />
+        <item itemvalue="Docker.Backend/Dockerfile" />
+        <item itemvalue="Docker.backend-Front/Dockerfile" />
+        <item itemvalue="Docker.eureka-naming-service/Dockerfile" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="850de6fb-23cb-49d9-982d-cdab69335ec0" name="Changes" comment="" />
+      <created>1704878858395</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704878858395</updated>
+    </task>
+    <task id="LOCAL-00001" summary="block16 spring cloud">
+      <option name="closed" value="true" />
+      <created>1704968618864</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704968618864</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="block16 spring cloud" />
+    <option name="LAST_COMMIT_MESSAGE" value="block16 spring cloud" />
+  </component>
+</project>

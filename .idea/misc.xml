@@ -1,0 +1,20 @@
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$USER_HOME$/Backend/block16-Springcloud/pom.xml" />
+        <option value="$USER_HOME$/Backend/block16-Springcloud/Api-gateway/pom.xml" />
+        <option value="$USER_HOME$/Backend/block16-Springcloud/backend-Front/pom.xml" />
+        <option value="$USER_HOME$/Backend/block16-Springcloud/Api-gateway/eureka-naming-service/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-naming-service/pom.xml" />
+        <option value="$PROJECT_DIR$/backend-Front/pom.xml" />
+        <option value="$PROJECT_DIR$/Backend/API-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/Backend/pom.xml" />
+        <option value="$PROJECT_DIR$/trip-application/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK" />
+</project>
